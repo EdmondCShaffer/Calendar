@@ -23,11 +23,9 @@ describe('Calendar Component', () => {
   it('clicking next and previous buttons updates current month', () => {
     const { getByText } = render(<Calendar />);
 
-    // Click the next button ('>')
     fireEvent.click(getByText('>'));
     expect(getByText('Jul 2024')).toBeInTheDocument();
 
-    // Click the previous button ('<')
     fireEvent.click(getByText('<'));
     expect(getByText('Jun 2024')).toBeInTheDocument();
   });
