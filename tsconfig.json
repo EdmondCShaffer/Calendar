@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "target": "es6",
+    "lib": ["dom", "esnext"],
+    "types": ["node", "jest", "@testing-library/jest-dom"],
+  },
+  "include": ["src"]
+}
